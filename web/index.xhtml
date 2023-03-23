@@ -10,6 +10,10 @@
         <meta name="description" content="A starter Jakarta EE 8 project with modern technologies. Uses PrimeFaces, OmniFaces and PrimeFlex to provide a fast modern development and user experience." />
     </h:head>
     <h:body>
-        <p:outputLabel value="Hello from PrimeFaces" />
+        <div class="flex flex-column">
+            <p:outputLabel value="Hello from PrimeFaces" />
+            <p:outputLabel value="#{userSession.hello}" />
+        </div>
+
     </h:body>
 </html>
