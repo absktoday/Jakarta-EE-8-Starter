@@ -6,14 +6,15 @@
     <h:head>
         <title>Home</title>
         <h:outputStylesheet library="css" name="global.css"  />
+        <link rel="shortcut icon" type="image/x-icon" href="#{resource['images/adidas.svg']}"/>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="description" content="A starter Jakarta EE 8 project with modern technologies. Uses PrimeFaces, OmniFaces and PrimeFlex to provide a fast modern development and user experience." />
     </h:head>
     <h:body>
-        <div class="flex flex-column">
-            <ui:insert name = "header" >
-                <ui:include src = "header.xhtml" />
-            </ui:insert> 
+        <ui:insert name = "header" >
+            <ui:include src = "header.xhtml" />
+        </ui:insert> 
+        <div class="flex flex-column wrapper surface-card border-round-xl mt-4">
             <h1>
                 Home Page
             </h1>

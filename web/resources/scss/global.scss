@@ -10,13 +10,34 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/style.scss to edit thi
 @import '../../../node_modules/primeflex/primeflex.scss';
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
+.wrapper {
+    margin-right: auto; /* 1 */
+    margin-left:  auto; /* 1 */
+
+    max-width: 960px; /* 2 */
+
+    padding-right: 10px; /* 3 */
+    padding-left:  10px; /* 3 */
+}
+
 body {
     font-family: 'Inter', sans-serif;
     margin: 0px;
+    @include styleclass('surface-ground');
 }
 
 body .ui-widget {
     font-family: 'Inter', sans-serif;
+}
+
+.ui-menu-list {
+    margin-right: auto !important; /* 1 */
+    margin-left:  auto !important; /* 1 */
+
+    max-width: 960px; /* 2 */
+
+    padding-right: 10px !important; /* 3 */
+    padding-left:  10px !important; /* 3 */
 }
 
 .ui-menubar {
@@ -27,11 +48,12 @@ body .ui-widget {
     @include styleclass('text-0');
 }
 
-.ui-menuitem-link:hover {
+.ui-menuitem-link {
+    @include styleclass('surface-900');
+}
 
-    .ui-menuitem-text {
-        @include styleclass('text-gray-900');
-    }
+.ui-menuitem-link:hover {
+    @include styleclass('surface-800');
 }
 
 /*body .ui-menu.ui-menubar>.ui-menu-list>.ui-menuitem>.ui-menuitem-link>span {

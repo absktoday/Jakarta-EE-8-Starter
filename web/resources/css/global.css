@@ -826,11 +826,11 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/style.scss to edit thi
   background-color: var(--surface-700) !important;
 }
 
-.surface-800 {
+.surface-800, .ui-menuitem-link:hover {
   background-color: var(--surface-800) !important;
 }
 
-.surface-900, .ui-menubar {
+.surface-900, .ui-menuitem-link, .ui-menubar {
   background-color: var(--surface-900) !important;
 }
 
@@ -2457,7 +2457,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/style.scss to edit thi
 .text-gray-800 {
   color: var(--gray-800) !important;
 }
-.text-gray-900, .ui-menuitem-link:hover .ui-menuitem-text {
+.text-gray-900 {
   color: var(--gray-900) !important;
 }
 
@@ -6736,7 +6736,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/style.scss to edit thi
   color: var(--text-color-secondary) !important;
 }
 
-.surface-ground {
+.surface-ground, body {
   background-color: var(--surface-ground) !important;
 }
 
@@ -20125,6 +20125,14 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/style.scss to edit thi
   animation-fill-mode: both !important;
 }
 
+.wrapper {
+  margin-right: auto; /* 1 */
+  margin-left: auto; /* 1 */
+  max-width: 960px; /* 2 */
+  padding-right: 10px; /* 3 */
+  padding-left: 10px; /* 3 */
+}
+
 body {
   font-family: "Inter", sans-serif;
   margin: 0px;
@@ -20132,6 +20140,14 @@ body {
 
 body .ui-widget {
   font-family: "Inter", sans-serif;
+}
+
+.ui-menu-list {
+  margin-right: auto !important; /* 1 */
+  margin-left: auto !important; /* 1 */
+  max-width: 960px; /* 2 */
+  padding-right: 10px !important; /* 3 */
+  padding-left: 10px !important; /* 3 */
 }
 
 /*body .ui-menu.ui-menubar>.ui-menu-list>.ui-menuitem>.ui-menuitem-link>span {
