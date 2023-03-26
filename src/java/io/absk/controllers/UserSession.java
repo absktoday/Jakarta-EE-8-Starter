@@ -9,10 +9,6 @@ import javax.enterprise.context.SessionScoped;
 import java.io.Serializable;
 import javax.annotation.PostConstruct;
 
-/**
- *
- * @author abhis
- */
 @Named(value = "userSession")
 @SessionScoped
 public class UserSession implements Serializable {

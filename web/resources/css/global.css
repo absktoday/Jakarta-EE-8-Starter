@@ -614,7 +614,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/style.scss to edit thi
     margin-left: 100% !important;
   }
 }
-.text-0 {
+.text-0, .ui-menuitem-text {
   color: var(--surface-0) !important;
 }
 
@@ -830,7 +830,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/style.scss to edit thi
   background-color: var(--surface-800) !important;
 }
 
-.surface-900 {
+.surface-900, .ui-menubar {
   background-color: var(--surface-900) !important;
 }
 
@@ -2457,7 +2457,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/style.scss to edit thi
 .text-gray-800 {
   color: var(--gray-800) !important;
 }
-.text-gray-900 {
+.text-gray-900, .ui-menuitem-link:hover .ui-menuitem-text {
   color: var(--gray-900) !important;
 }
 
@@ -13655,7 +13655,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/style.scss to edit thi
     box-shadow: 0px 9px 46px 8px rgba(0, 0, 0, 0.12), 0px 24px 38px 3px rgba(0, 0, 0, 0.14), 0px 11px 15px rgba(0, 0, 0, 0.2) !important;
   }
 }
-.border-none {
+.border-none, .ui-menubar {
   border-width: 0px !important;
   border-style: none;
 }
@@ -14403,7 +14403,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/style.scss to edit thi
     border-style: double !important;
   }
 }
-.border-noround {
+.border-noround, .ui-menubar {
   border-radius: 0 !important;
 }
 
@@ -20133,5 +20133,10 @@ body {
 body .ui-widget {
   font-family: "Inter", sans-serif;
 }
+
+/*body .ui-menu.ui-menubar>.ui-menu-list>.ui-menuitem>.ui-menuitem-link>span {
+    display: flex !important;
+    align-items: center !important;
+}*/
 
 /*# sourceMappingURL=global.css.map */

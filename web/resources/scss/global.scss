@@ -18,3 +18,23 @@ body {
 body .ui-widget {
     font-family: 'Inter', sans-serif;
 }
+
+.ui-menubar {
+    @include styleclass('surface-900 border-none border-noround');
+}
+
+.ui-menuitem-text {
+    @include styleclass('text-0');
+}
+
+.ui-menuitem-link:hover {
+
+    .ui-menuitem-text {
+        @include styleclass('text-gray-900');
+    }
+}
+
+/*body .ui-menu.ui-menubar>.ui-menu-list>.ui-menuitem>.ui-menuitem-link>span {
+    display: flex !important;
+    align-items: center !important;
+}*/
