@@ -614,7 +614,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/style.scss to edit thi
     margin-left: 100% !important;
   }
 }
-.text-0, .ui-menuitem-text {
+.text-0 {
   color: var(--surface-0) !important;
 }
 
@@ -826,11 +826,11 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/style.scss to edit thi
   background-color: var(--surface-700) !important;
 }
 
-.surface-800, .ui-menuitem-link:hover {
+.surface-800 {
   background-color: var(--surface-800) !important;
 }
 
-.surface-900, .ui-menuitem-link, .ui-menubar {
+.surface-900 {
   background-color: var(--surface-900) !important;
 }
 
@@ -4063,10 +4063,10 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/style.scss to edit thi
 .bg-gray-600 {
   background-color: var(--gray-600) !important;
 }
-.bg-gray-700 {
+.bg-gray-700, .ui-menuitem-link:hover {
   background-color: var(--gray-700) !important;
 }
-.bg-gray-800 {
+.bg-gray-800, .ui-menuitem-link, .ui-menubar {
   background-color: var(--gray-800) !important;
 }
 .bg-gray-900 {
@@ -6720,7 +6720,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/style.scss to edit thi
   border-color: var(--primary-color) !important;
 }
 
-.text-white {
+.text-white, .ui-menuitem-text {
   color: #ffffff !important;
 }
 
@@ -20148,6 +20148,10 @@ body .ui-widget {
   max-width: 960px; /* 2 */
   padding-right: 10px !important; /* 3 */
   padding-left: 10px !important; /* 3 */
+}
+
+.theme-toggle-button {
+  height: 4.5rem !important;
 }
 
 /*body .ui-menu.ui-menubar>.ui-menu-list>.ui-menuitem>.ui-menuitem-link>span {

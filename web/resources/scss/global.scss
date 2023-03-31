@@ -41,22 +41,26 @@ body .ui-widget {
 }
 
 .ui-menubar {
-    @include styleclass('surface-900 border-none border-noround');
+    @include styleclass('bg-gray-800 border-none border-noround');
 }
 
 .ui-menuitem-text {
-    @include styleclass('text-0');
+    @include styleclass('text-white');
 }
 
 .ui-menuitem-link {
-    @include styleclass('surface-900');
+    @include styleclass('bg-gray-800');
 }
 
 .ui-menuitem-link:hover {
-    @include styleclass('surface-800');
+    @include styleclass('bg-gray-700');
 }
 
+.theme-toggle-button {
+    height: 4.5rem !important;
+}
 /*body .ui-menu.ui-menubar>.ui-menu-list>.ui-menuitem>.ui-menuitem-link>span {
     display: flex !important;
     align-items: center !important;
 }*/
+
