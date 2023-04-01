@@ -23,7 +23,6 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/style.scss to edit thi
 body {
     font-family: 'Inter', sans-serif;
     margin: 0px;
-    @include styleclass('surface-ground');
 }
 
 body .ui-widget {

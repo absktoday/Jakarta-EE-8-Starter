@@ -6736,7 +6736,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/style.scss to edit thi
   color: var(--text-color-secondary) !important;
 }
 
-.surface-ground, body {
+.surface-ground {
   background-color: var(--surface-ground) !important;
 }
 
